@@ -1,0 +1,30 @@
+body{
+    /* background-color: rgb(119, 140, 246); */
+}
+
+p{
+    font-size: 64px;
+    color: blue;
+    background-color: yellow;
+}
+
+/* We taget class names by using the .  */
+.FirstPTagExample{
+    font-size: 48px;
+    color: crimson;
+    background-color: black;
+}
+
+/* We target id by using the # */
+#FinalPTagExample{
+    font-size: 80px;
+    color: darkgoldenrod;
+    background-color: deepskyblue;
+}
+
+@media (min-width: 800px){
+    p{
+        font-size: 12px;
+    }
+    
+}

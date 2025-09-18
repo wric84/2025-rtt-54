@@ -1,0 +1,12 @@
+body{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table{
+    background-color: aliceblue;
+    border-collapse: collapse;
+}

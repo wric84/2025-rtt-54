@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Task Management App</title>
+  </head>
+  <body>
+    <h1>Task Management App</h1>
+    <!-- Create a form to input a task name, category, Deadline, Status -->
+    <section>
+      <!-- Task name -->
+      <label for="taskName">Task Name:</label>
+      <input id="taskName" placeholder="e.g. Finish Report" type="text" />
+
+      <!-- Task Category -->
+      <label for="taskCategory">Category:</label>
+      <input id="taskCategory" placeholder="e.g. Work, Personal" type="text" />
+
+      <!-- Deadline -->
+      <label for="taskDeadline">Deadline:</label>
+      <input id="taskDeadline" type="date" />
+
+      <!-- Status -->
+      <label for="taskStatus">Status:</label>
+      <!-- <input id=taskStatus" type="text"> -->
+      <select id="taskStatus">
+        <option value="Not Started">Not Started</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+      </select>
+
+      <!-- Adding Button -->
+      <button id="addTaskBtn">Add Task</button>
+    </section>
+
+    <!-- Create a list of tasks created -->
+    <section id="listSection">
+        <h2>Your Tasks</h2>
+        <!-- <ul id="taskBody">
+
+        </ul> -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Task</th>
+                    <th>Category</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tasksBody">
+
+            </tbody>
+        </table>
+    </section>
+  </body>
+</html>
