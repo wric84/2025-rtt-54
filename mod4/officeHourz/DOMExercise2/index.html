@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Task Management</title>
+</head>
+<body>
+    <h1>Task Management</h1>
+    <!-- First section is for user form -->
+    <section id="taskFormSection">
+        <label for="taskName">Task Name:</label>
+        <input id="taskName" placeholder="e.g. Finish SBA3" type="text">
+
+        <label for="taskCategory">Task Category:</label>
+        <input id="taskCategory" placeholder="e.g. Work, personal" type="text">
+
+        <label for="taskDeadline">Task Deadline:</label>
+        <input id="taskDeadline" type="date">
+
+        <label for="taskStatus">Task Status:</label>
+        <!-- <input id="taskStatus" placeholder="e.g. Incomplete, In progress, Completed" type="text"> -->
+         <select id="taskStatus">
+            <option value="Not Started">Not Started</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+         </select>
+
+         <button id="addTaskBtn">Add Task</button>
+
+    </section>
+    <!-- This section will display the tasks -->
+     <section>
+        <!-- <ul id="taskBodyUl"></ul> -->
+         <table>
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Category</th>
+                    <th>Deadline</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="tasksTBody">
+                <!-- js tasks created will be inserted here -->
+            </tbody>
+         </table>
+     </section>
+</body>
+</html>
