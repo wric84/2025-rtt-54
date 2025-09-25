@@ -1,0 +1,45 @@
+body{
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 12px;
+}
+
+#board{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+.tile{
+    background: green;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 12px;
+}
+
+.controls{
+    display: flex;
+    margin-top: 8px;
+    gap: 5px;
+}
+
+button{
+    border-radius: 6px;
+    padding: 6px;
+}
+
+.front{
+
+}
+
+.back{
+
+}
+
+.hidden{
+    display: none;
+}

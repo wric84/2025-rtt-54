@@ -1,0 +1,27 @@
+body{
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, button{
+    padding: 6px;
+}
+
+button{
+    border-radius: 6px; 
+    width: 100px;
+}
+
+body.dark{
+    background-color: #222;
+    color: white;
+}
