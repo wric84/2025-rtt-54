@@ -12,16 +12,21 @@ form{
     gap: 10px;
 }
 
-input, button{
+input{
     padding: 6px;
 }
 
 button{
     border-radius: 6px; 
     width: 100px;
+    padding: 6px;
 }
 
 body.dark{
     background-color: #222;
     color: white;
+}
+
+#themeDiv{
+    padding: 6px;
 }
