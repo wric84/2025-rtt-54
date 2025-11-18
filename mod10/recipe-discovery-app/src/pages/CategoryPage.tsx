@@ -12,7 +12,7 @@ function CategoryPage(){
             try {
                 const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${categoryName}`)
                 const data = await response.json()
-                console.log(data);
+                //console.log(data);
                 setRecipes(data.meals)
                 
             } catch (error) {

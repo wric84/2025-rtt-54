@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import HomePage from './pages/HomePage'
 import CategoryPage from './pages/CategoryPage'
+import RecipeDeatilPage from './pages/RecipeDeatailPage'
 
 function App() {
  
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage/>}/>
         <Route path="/category/:categoryName" element={<CategoryPage/>}/>
+        <Route path='/recipe/:idMeal' element={<RecipeDeatilPage/>}/>
       </Routes>
     </>
   )

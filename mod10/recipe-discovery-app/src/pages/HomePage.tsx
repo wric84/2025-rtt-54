@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import FavoritesList from "../components/FavoritesList"
 
 function HomePage(){
     const [categories, setCategories] = useState([])
@@ -9,7 +10,7 @@ function HomePage(){
         try {
             const response = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
             const data = await response.json()
-            console.log(data);
+            //console.log(data);
             setCategories(data.categories)
             
         } catch (error) {
@@ -28,6 +29,7 @@ function HomePage(){
                     <h3>{category.strCategory}</h3>
                 </Link>
             ))}
+            <FavoritesList/>
         </main>
     )
 }
